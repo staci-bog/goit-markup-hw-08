@@ -32,7 +32,8 @@
       border-radius: 4px;
       background-repeat: no-repeat;
       background-position: center;
-      background-color: var(--second-bg-color);
+      background-color: getColor('team-background');
+      /*background-color: var(--second-bg-color);*/
       margin-bottom: 30px;
     }
     
@@ -57,7 +58,8 @@
     line-height: 1.4;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--second-color-text);
+    color: getColor('primary-text-color');
+    /*color: var(--second-color-text);*/
   }
   .quality__text {
     margin-top: 0;

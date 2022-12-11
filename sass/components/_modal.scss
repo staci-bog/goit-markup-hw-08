@@ -19,7 +19,8 @@
   transform: translate(-50%, -50%);
   width: 528px;
   height: 620px;
-  background: var(--primary-white-color);
+  background: getColor('white');
+  /*background: var(--primary-white-color);*/
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
@@ -46,14 +47,16 @@
 
   &:hover,
   &:focus {
-    fill: var(--accent-color);
+    fill: getColor('accent');
+    /*fill: var(--accent-color);*/
   }
 
 .modal__title {
   margin: 0;
   padding: 40px 40px 12px 40px;
   align-items: center;
-  color: var(--second-color-text);
+  color: getColor('primary-text-color');
+  /*color: var(--second-color-text);*/
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -81,13 +84,15 @@
   padding: 10px;
   padding-left: 40px;
   font-size: 12px;
-  color: var(--second-color-text);
+  color: getColor('primary-text-color');
+  /*color: var(--second-color-text);*/
   font-weight: bold;
 }
 
   &:hover,
   &:focus {
-    border-color: var(--accent-color);
+    border-color: getColor('accent');
+    /*border-color: var(--accent-color);*/
   }
 
 .modal__textarea {
@@ -98,13 +103,15 @@
   resize: none;
   padding: 10px;
   font-size: 12px;
-  color: var(--second-color-text);
+  color: getColor('primary-text-color');
+  /*color: var(--second-color-text);*/
   font-weight: bold;
 }
 
   &:hover,
   &:focus {
-    border-color: var(--accent-color);
+    border-color: getColor('accent-color');
+    /*border-color: var(--accent-color);*/
   }
 
 &__input::placeholder,
@@ -118,7 +125,8 @@
   width: 100%;
   margin-bottom: 4px;
   font-size: 14px;
-  color: var(--color-text);
+  color: getColor('secondary-text-color');
+  /*color: var(--color-text);*/
 }
 
 .sizes {
@@ -139,12 +147,14 @@
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  fill: var(--second-color-text);
+  fill: getColor('primary-text-color');
+  /*fill: var(--second-color-text);*/
 }
 
 &__input:focus+&__icon,
 &__input:hover+&__icon {
-  fill: var(--accent-color);
+  fill: getColor('accent');
+  /*fill: var(--accent-color);*/
 }
 
 .modal__check-line {
@@ -172,29 +182,34 @@
 }
 
 .modal__check-line input:checked+.modal__checkbox-agree .modal__icon-wrapper {
-  background-color: var(--accent-color);
+  background-color: getColor('accent');
+  /*background-color: var(--accent-color);*/
   border: none;
 }
 
 .modal__check-line input:checked+.modal__checkbox-agree .modal__agree-icon {
-  fill: var(--primary-white-color);
+  fill: getColor('white');
+  /*fill: var(--primary-white-color);*/
 }
 
 .modal__check-link {
-  color: var(--accent-color);
+  color: getColor('accent');
+  /*color: var(--accent-color);*/
 }
 
 .modal__button {
   border-radius: 4px;
   border: 1px solid transparent;
-  background-color: var(--accent-color);
+  background-color: getColor('accent');
+  /*background-color: var(--accent-color);*/
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
+  color: getColor('white');
+  /*color: var(--primary-white-color);*/
   cursor: pointer;
   padding: 10px 80px;
   margin: 30px 120px 40px 120px;

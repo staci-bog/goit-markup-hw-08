@@ -11,7 +11,8 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--second-color-text);
+    color: getColor('primary-text-color');
+    /*color: var(--second-color-text);*/
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -20,10 +21,12 @@
   }
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: getColor('accent');
+      /*color: var(--accent-color);*/
     }
   .site-nav__link.current {
-    color: var(--accent-color);
+    color: getColor('accent');
+    /*color: var(--accent-color);*/
     position: relative;
   }
   .site-nav__link.current::after {
@@ -34,7 +37,8 @@
     bottom: -1px;
     border-radius: 2px;
     left: 0;
-    background: var(--accent-color);
+    background: getColor('accent');
+    /*background: var(--accent-color);*/
   }
   .auth-nav {
     display: flex;
@@ -44,7 +48,8 @@
     margin-left: 50px;
   }
   .auth-nav__link {
-    color: var(--color-text);
+    color: getColor('secondary-text-color');
+    /*color: var(--color-text);*/
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -53,7 +58,8 @@
   }
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: getColor('accent');
+      /*color: var(--accent-color);*/
     }
   .auth-nav__link {
     display: flex;
@@ -63,5 +69,6 @@
     margin-right: 10px;
   }
   .auth-nav__link:hover .auth-nav__icon {
-    fill: var(--accent-color);
+    fill: getColor('accent');
+    /*fill: var(--accent-color);*/
   }

@@ -6,12 +6,17 @@ $colors: (
     'secondary-text-color': #757575,
     /*--color-text: #757575;*/
     'background': #F5F5F5,
-    
     'secondary-background-color': #2F303A,
+    /*--third-bg-color:#2f303a;*/
     'white': #FFFFFF,
+    /* --primary-white-color: #ffffff;*/
     'black': #000000,
+    /*--third-color-text: #000000;*/
     'request-background': #C4C4C4,
-    'team-background': #F5F4FA
+    'team-background': #F5F4FA,
+    /*--second-bg-color:  #F5F4FA;*/
+    'secondary-white-color':rgba(255, 255, 255, 0.6)
+    /*--secondary-white-color: rgba(255, 255, 255, 0.6);*/
 );
 
 @function getColor($key) {

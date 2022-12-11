@@ -1,7 +1,8 @@
 .footer {
-    background-color: var(--third-bg-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  background-color: getColor('black');
+ /* background-color: var(--third-bg-color);*/
+  padding-top: 60px;
+  padding-bottom: 60px;
   }
   
   /* footer logo */
@@ -24,7 +25,8 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--accent-color);
+    color: getColor('accent');
+    /*color: var(--accent-color);*/
   }
   .footer__logo-studio {
     font-family: 'Raleway';
@@ -32,7 +34,8 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--primary-white-color);
+    color: getColor('white');
+    /*color: var(--primary-white-color);*/
   }
   /* address */
   .footer__list {
@@ -47,15 +50,18 @@
   
 
   .footer__link {
-    color: var(--primary-white-color);
+    color: getColor('white');
+    /*color: var(--primary-white-color);*/
     text-decoration: none;
   }
         &:hover,
         &:focus {
-          color: var(--accent-color);
+          color: getColor('accent');
+          /*color: var(--accent-color);*/
         }
   .footer__contacts {
-    color: var(--secondary-white-color);
+    color: getColor('secondary-white-color');
+    /*color: var(--secondary-white-color);*/
     text-decoration: none;
   }
   /*find us on*/
@@ -67,7 +73,8 @@
   }
   
   .footer__title {
-    color: var(--primary-white-color);
+    color: getColor('white');
+    /*color: var(--primary-white-color);*/
   }
   .footer__social-link, 
   .footer__social-item   {
