@@ -1,67 +1,71 @@
 .quality {
-    margin-top: 0;
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  .quality__visually-hidden {
-    margin-top: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
-  .quality__item {
-    width: 270px;
-    margin-right: 30px;
-    margin-bottom: 0px;
-  }
-    &:nth-child(4n) {
-      margin-right: 0;
+    padding-top: 60px;
+    @extend %section;
+}
+
+.quality__list {
+    @include media-min(tablet){
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
     }
-  
-    &::before {
-      display: block;
-      content: "";
-      height: 120px;
-      border-radius: 4px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: getColor('team-background');
-      /*background-color: var(--second-bg-color);*/
-      margin-bottom: 30px;
+
+    @include media-min(desktop){
+        flex-wrap: nowrap;
     }
-    
-  .icon-antenna::before {
-    background-image: url(../images/icons/antenna\ 1.svg);
-  }
-  .icon-clock::before {
-    background-image: url(../images/icons/clock\ 1.svg);
-  }
-  .icon-diagram::before{
-    background-image: url(../images/icons/diagram\ 1.svg);
-  }
-  .icon-astronaut::before{
-    background-image: url(../images/icons/astronaut\ 1.svg);
-  }
-  
-  .quality__title {
-    margin-top: 0;
-    margin-bottom: 10px;
+}
+
+.quality__item {
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    @include media-min(tablet){
+        margin: 15px;
+        width: calc((100% - 4 * 15px) / 2);
+        text-align: center;
+    }
+
+    @include media-min(desktop){
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 100% ;
+        text-align: center;
+
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+}
+
+.quality__title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0.03em;
+    line-height: 1.14;
     text-transform: uppercase;
-    color: getColor('primary-text-color');
-    /*color: var(--second-color-text);*/
-  }
-  .quality__text {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+    margin-bottom: 10px;
+    text-align: center;
+
+    @include media-min(tablet){
+        text-align: left;
+    }
+}
+
+.quality__text {
+    // margin-top: 0;
+    // margin-bottom: 0;
+    line-height: 1.71px;
+    color: getColor(secondary-text-color);
+    line-height: 24px;
+    text-align: left;
+}
+
+.quality__tumb {
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px;
+    text-align: center;
+
+}
