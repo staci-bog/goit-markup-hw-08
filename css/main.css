@@ -634,7 +634,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -15px;
+    /*margin: -15px;*/
   }
 }
 @media screen and (min-width: 1200px) {
@@ -682,6 +682,8 @@ img {
 }
 
 .quality__text {
+  /* margin-top: 0;*/
+  /* margin-bottom: 0;*/
   line-height: 1.71px;
   color: #757575;
   line-height: 24px;
